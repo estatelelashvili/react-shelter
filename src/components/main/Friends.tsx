@@ -94,7 +94,7 @@ const Friends = () => {
   return (
     <section className={isPetsRoute ? 'pets' : 'friends'} id='friends'>
       <div className='container content__container'>
-        <h3>
+        <h3 className={isPetsRoute ? 'centered-heading' : ''}>
           Our friends who
           <br /> are looking for a house
         </h3>
