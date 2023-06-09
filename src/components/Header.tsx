@@ -16,7 +16,13 @@ const Header = () => {
         <nav>
           <ul className='nav__list'>
             <li>
-              <Link to='/' className='paragraph-l active'>
+              <Link
+                to='/'
+                // className='paragraph-l active'
+                className={
+                  isPetsRoute ? 'paragraph-darker' : 'paragraph-l active'
+                }
+              >
                 {' '}
                 About the shelter
               </Link>

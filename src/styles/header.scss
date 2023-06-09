@@ -38,6 +38,13 @@ header {
       color: var(--light-s);
     }
   }
+  a.paragraph-darker {
+    color: var(--dark-s);
+
+    &:hover {
+      color: var(--light-s);
+    }
+  }
 
   ul {
     display: flex;
