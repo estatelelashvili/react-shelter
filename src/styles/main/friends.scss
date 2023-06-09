@@ -9,6 +9,13 @@
   animation: spin 1s infinite linear;
 }
 
+.invisible-anchor{
+	visibility:hidden	
+}
+.visible-anchor{
+	visibility: visible;
+}
+
 .friends {
 	background: var(--light-l);
 	text-align: center;

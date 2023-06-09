@@ -130,7 +130,12 @@ const Friends = () => {
             ]}
           />
         </section>
-        <a href='../pets'>Get to know the rest</a>
+        <a
+          className={isPetsRoute ? 'invisible-anchor' : 'visible-anchor'}
+          href='../pets'
+        >
+          Get to know the rest
+        </a>
       </div>
     </section>
   );
