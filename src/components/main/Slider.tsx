@@ -1,7 +1,7 @@
 import SliderErrows from '../shared/SliderErrows';
 import Spinner from '../shared/Spinner';
 import PetCard from '../PetCard';
-import './catalog.scss';
+import '../../styles/catalog.scss';
 import { AnimalDataSubset } from '../../models/types';
 import { useState } from 'react';
 type SliderProps = {
@@ -28,6 +28,7 @@ const Slider = ({ isLoading, pets }: SliderProps) => {
               pets.map((animal) => (
                 <PetCard
                   key={animal.id}
+                  id={animal.id}
                   name={animal.name}
                   photos={animal.photos}
                 />

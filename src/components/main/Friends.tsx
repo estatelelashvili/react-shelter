@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react';
 import { AnimalDataSubset } from '../../models/types';
 import PetCard from '../PetCard';
 import Spinner from '../shared/Spinner';
-// import Button from './Button';
 import SliderErrows from '../shared/SliderErrows';
 import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -70,7 +69,7 @@ const Friends = () => {
             (animal: AnimalDataSubset) => animal.photos.length > 0
           );
           dispatch(storeData(filteredAnimals));
-          // setPets(filteredAnimals);
+
           setIsLoading(false);
         } else {
           console.error('Error fetching animals');
@@ -131,7 +130,7 @@ const Friends = () => {
             ]}
           />
         </section>
-        <a href='../pets/index.html'>Get to know the rest</a>
+        <a href='../pets'>Get to know the rest</a>
       </div>
     </section>
   );

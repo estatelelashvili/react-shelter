@@ -29,8 +29,9 @@
 	position: relative;
 	left: -1080px;
 	left: -2160px;
-	display: flex;
 	z-index: 1;
+	display: flex;
+	flex-wrap: wrap
 }
 
 .slider__cards_prev,
@@ -117,9 +118,11 @@
 
 @keyframes move-left-xl {
 	from {
+		// left: -1080px;
 		left: -2160px;
 	}
 	to {
+		// left: 0px;
 		left: -1080px;
 	}
 }
@@ -135,9 +138,11 @@
 
 @keyframes move-left-l {
 	from {
+		// left: -620px;
 		left: -1240px;
 	}
 	to {
+		// left: 0px;
 		left: -620px;
 	}
 }
@@ -153,9 +158,11 @@
 
 @keyframes move-left-m {
 	from {
+		// left: -460px;
 		left: -920px;
 	}
 	to {
+		// left: 0px;
 		left: -460px;
 	}
 }
@@ -172,8 +179,10 @@
 @keyframes move-left-s {
 	from {
 		left: -600px;
+		// left: -300px;
 	}
 	to {
+		// left: 0px;
 		left: -300px;
 	}
 }
