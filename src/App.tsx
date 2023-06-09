@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Main from './components/main/Main';
 import Friends from './components/main/Friends';
 import Details from './components/shared/Details';
-// import FriendsTest from './components/main/FriendsTest';
+
 function App() {
   return (
     <BrowserRouter>
