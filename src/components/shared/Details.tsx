@@ -1,10 +1,14 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../models/types';
 import '../../styles/details.scss';
 
 const Details = () => {
+  const navigate = useNavigate();
   const { animalId } = useParams();
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   const petData = useSelector((state: RootState) => state.animalData);
   let pet;
   if (animalId) {
@@ -20,9 +24,9 @@ const Details = () => {
           <h4>Dog - Labrador</h4>
           <h5>{pet?.description}</h5>
           <p>{pet?.age}</p>
-          <Link to='/' className='close'>
-            Go Back
-          </Link>
+          <button className='close' onClick={handleGoBack}>
+            Go back
+          </button>
         </div>
       </div>
     </section>

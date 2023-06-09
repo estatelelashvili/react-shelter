@@ -102,6 +102,7 @@ const Friends = () => {
         <section className='slider'>
           <div className='slider__container'>
             <div className={animation}>
+              <ul className='slider__cards_prev'></ul>
               <ul className='slider__cards_main'>
                 {isLoading ? (
                   <Spinner />
@@ -116,6 +117,7 @@ const Friends = () => {
                   ))
                 )}
               </ul>
+              <ul className='slider__cards_next'></ul>
             </div>
           </div>
           <SliderErrows
