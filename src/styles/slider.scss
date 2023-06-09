@@ -1,0 +1,19 @@
+.slider__arrow {
+  &:disabled {
+    border: 2px solid var(--dark-s);
+
+    > span {
+      color: var(--dark-s);
+    }
+
+    path {
+      fill: var(--dark-s);
+    }
+
+    &:hover {
+      border: 2px solid var(--dark-s);
+      background: none;
+      cursor: auto;
+    }
+  }
+}

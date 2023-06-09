@@ -1,0 +1,11 @@
+.slider__card {
+	min-width: calc(25% - 40px);
+	margin: 15px 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.slider__card {
+		min-width: calc(100% - 30px);
+		margin: 0 15px 30px;
+	}
+}
